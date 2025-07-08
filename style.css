@@ -1,0 +1,243 @@
+* {
+    list-style-type: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    /*height: 100%;*/
+    width: auto;
+    margin: 0 auto;
+    /* l'image de fond couvre toute la page */
+    background-image: url("./img/X0R2Doki-fond-decran-Noir-et-blanc-109.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Pour ajouter un effet de transparence */
+    background-color: rgba(238, 231, 231, 0); /* Gris semi-transparent */
+    background-blend-mode: lighten;
+}
+    
+header {
+    background-color: #1211117b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #d81111;
+    padding: 20px auto;
+    border-radius: 20px;
+    display: block;
+    margin: auto ;
+}
+
+h1 {
+    color: rgb(230, 11, 11);
+    font-size: 5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* a revoir cette partie de codage */
+    font-size: (2.5vw+ 20px); /* Taille responsive */
+    margin:auto;
+    padding: auto;
+}
+h1, h2 {
+  font-family: 'Monoton', cursive;
+  color: #df1515;
+  text-shadow: 0 0 30px #ffb06f;
+}
+h2 {
+    color: #e20c0c;
+    font-size: 2em;
+    text-align: center;
+}
+img {
+    height: 50vh;
+    width: 50vh;
+    border-radius: 10px;
+    box-shadow: 18px 18px 60px rgb(0, 0, 0);
+    display: block;
+    margin: auto;    
+}
+
+section {
+    background-color: #1212118d;
+    margin: 20px auto;
+    padding: 20px auto;
+    max-width: 100vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+footer {
+    text-align: center;
+    color: #d81111;
+    padding: 20px auto;
+    border-radius: 20px;
+    display: block;
+    margin: auto 0;
+    background-color: #1211117b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    /* width: 100dvh; */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+    /* box-sizing: border-box; */
+}
+
+.container a {
+    text-decoration: none;
+    color: #e90606;
+    font-size: 3em;
+}
+.container a {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 0 10px;
+  font-size: 1.2em;
+  color: #fff;
+  background: linear-gradient(145deg, #d80c0c, #bee000);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bolder;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.container a:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
+}
+.imagedroite {
+    height: 40vh;
+    width: 30vh;
+    border-radius: 10px;
+    box-shadow: 18px 18px 60px rgb(0, 0, 0);
+    display: block;
+    margin: auto;    
+    
+}
+/* Effet de zoom sur les images au survol */
+img,.imageacdc,.imagedroite {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  opacity: 0.50; /* entre 0 (transparent) et 1 (opaque) */
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+img:hover,.imageacdc:hover,.imagedroite:hover {
+  transform: scale(1.08);
+  box-shadow: 22px 22px 65px rgba(179, 13, 13, 0.8);
+  opacity: 1; /* pleine opacité au survol */
+  transform: scale(1.05);
+
+}
+
+
+
+@media screen and (max-width: 1440px) {
+        h1 {
+            font-size: 3em; /* Correction ici */
+
+        }
+        h2 {
+            font-size: 2em; /* Correction ici */
+        }
+        img {
+            /* height: 20vh; /* Ajouté pour garder la cohérence */
+            width: auto; */
+        }
+        .imagedroite {
+            height: 30vh; /* Ajouté pour garder la cohérence */
+            width: 30vh;
+        }
+        .imageacdc {
+            height: 40vh; /* Ajouté pour garder la cohérence */
+            width: 40vh;
+        }
+        .container {
+            font-size: 0.9rem; /* Réduction de la taille de police pour les écrans plus petits */
+        }
+    }
+ @media screen and (max-width: 1024px) {
+        h1 {
+            font-size: 3em; /* Taille de police réduite pour les écrans plus petits */
+        }
+        h2 {
+            font-size: 2em; /* Taille de police réduite pour les écrans plus petits */
+        }
+        img {
+            height: 40vh; /* Réduction de la taille de l'image */
+            width: 30vh;
+        }
+        .imagedroite {
+            height: 30vh; /* Réduction de la taille de l'image */
+            width: 30vh;
+       
+        }
+        
+    } 
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3em; /* Taille de police réduite pour les écrans plus petits */
+    }
+    h2 {
+        font-size: 2em; /* Taille de police réduite pour les écrans plus petits */
+    }
+    img {
+        /* height: 60vh; Réduction de la taille de l'image */
+        width: 30vh;
+    }
+    .imagedroite {
+        /* height: 50vh; Réduction de la taille de l'image */
+        width: 30vh;
+    }
+    .container {
+        font-size: 0.5rem; /* Réduction de la taille de police pour les écrans plus petits */
+    }
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.5em; /* Taille de police réduite pour les écrans plus petits */
+    }
+    h2 {
+        font-size: 1.5em; /* Taille de police réduite pour les écrans plus petits */
+    }
+    img {
+        height: 40vh; /* Réduction de la taille de l'image */
+        width: 30vh;
+    }
+    .imagedroite {
+        height: 30vh; /* Réduction de la taille de l'image */
+        width: 30vh;
+    }
+    .container {
+        font-size: 0.5rem; /* Réduction de la taille de police pour les écrans plus petits */
+    }
+}
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2em; /* Taille de police réduite pour les écrans plus petits */
+    }
+    h2 {
+        font-size: 1.2em; /* Taille de police réduite pour les écrans plus petits */
+    }
+    img {
+        height: 30vh; /* Réduction de la taille de l'image */
+        width: 20vh;
+    }
+    .imagedroite {
+        height: 20vh; /* Réduction de la taille de l'image */
+        width: 20vh;
+    }
+    .container {
+           font-size: 0.5rem; /* Réduction de la taille de police pour les écrans plus petits */    
+    }
+} 
